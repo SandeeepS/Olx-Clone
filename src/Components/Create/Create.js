@@ -37,6 +37,7 @@ const Create = () => {
      createdAt:date.toString(),
      userId:user.uid
     });
+    console.log("let going to navigate")
     navigate("/");
   }catch (error) {
     console.error("Error uploading image or saving product:", error);
@@ -49,7 +50,6 @@ const Create = () => {
       <Header />
       <card>
         <div className="centerDiv">
-       
             <label htmlFor="fname">Name</label>
             <br />
             <input
